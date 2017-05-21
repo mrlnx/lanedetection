@@ -39,10 +39,8 @@ for filename in images:
 		#cv2.waitKey(2000)
 
 		print filename + " found!"
-
 	#else:
-		#os.remove(filename)
-		#print filename + " remove!"
+		#os.remove(filename)			#print filename + " remove!"
 
 
 print imgpoints
@@ -50,7 +48,10 @@ print objpoints
 
 ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, (640, 48),  None, None)
 
-print mtx + " => " + dist
+print "mtx: "
+print mtx
+
+print "dist: "
+print dist
 
 cv2.destroyAllWindows()
-

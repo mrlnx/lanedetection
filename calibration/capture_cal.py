@@ -46,7 +46,7 @@ while(capture.isOpened()):
 		cv2.imwrite('images/calibration' + str(i) + '.jpg', gray)
 		i = i + 1
 
-print "last count " + i
+#print "last count " + i
 	
 capture.release()
 cv2.destroyAllWindows()
